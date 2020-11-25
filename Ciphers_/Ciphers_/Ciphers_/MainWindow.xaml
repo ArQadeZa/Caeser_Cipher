@@ -1,0 +1,34 @@
+﻿<Window x:Class="Ciphers_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ciphers_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="448" Width="454">
+    <Grid>
+        <TabControl Margin="10,10,10,10">
+            <TabItem Header="Encryption">
+                <Grid Background="#FFE5E5E5" Height="390" HorizontalAlignment="Left" Width="414">
+                    <TextBlock x:Name="txtCipherText" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="234" Width="323" Margin="10,85,0,0"/>
+                    <Label Content="Enter your text here ..&gt;" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Width="130"/>
+                    <TextBox x:Name="txtUserInput" HorizontalAlignment="Left" Margin="145,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="btnCipher" Content="Encrypt" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="76" Click="btnCipher_Click"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Decryption" Height="20" VerticalAlignment="Bottom">
+                <Grid Background="#FFE5E5E5" Height="390" HorizontalAlignment="Left" Width="414">
+                    <TextBlock x:Name="txtDeCipherText" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="234" Width="323" Margin="10,146,0,0"/>
+                    <Label Content="Enter your text here ..&gt;" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Width="130"/>
+                    <TextBox x:Name="txtEncryptedText" HorizontalAlignment="Left" Margin="145,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txtKey" HorizontalAlignment="Center" Margin="0,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="btnDeCipher" Content="Decrypt" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="76" Click="btnDeCipher_Click"/>
+                    <RadioButton x:Name="radCaeserDec" Content="Caeser Cipher" HorizontalAlignment="Left" Margin="306,24,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Enter your key here ..&gt;" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="130"/>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
